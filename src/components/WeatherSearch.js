@@ -1,9 +1,9 @@
 import React from 'react';
 
-const WeatherSearch = () => {
+const WeatherSearch = (props) => {
   return (
     <div className="weather-search">
-      <form className="weather-search__form">
+      <form onSubmit={props.api_call} className="weather-search__form">
         <input
           autoComplete="off"
           className="weather-search__input"
