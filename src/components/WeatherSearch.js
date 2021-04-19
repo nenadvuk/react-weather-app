@@ -1,9 +1,11 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import Context from '../Context'
 
-const WeatherSearch = (props) => {
+const WeatherSearch = () => {
+  const {api_call} = useContext(Context)
   return (
     <div className="weather-search">
-      <form onSubmit={props.api_call} className="weather-search__form">
+      <form onSubmit={api_call} className="weather-search__form">
         <input
           autoComplete="off"
           className="weather-search__input"
