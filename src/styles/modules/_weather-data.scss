@@ -17,6 +17,9 @@
     @include respond(largePhone) {
       margin-top: 4rem;
     }
+    @include respond(smallPhone) {
+      display: block;
+    }
   }
 
   &__property {
@@ -35,10 +38,13 @@
 
   &__value {
     color: $colour-2;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 0.6;
+    @include respond(largePhone) {
+      font-size: 2rem;
+    }
     @include respond(smallPhone) {
-      font-size: 3rem;
+      font-size: 1rem;
     }
   }
 }

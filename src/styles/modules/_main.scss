@@ -10,11 +10,12 @@
   border-radius: 3px;
   overflow: hidden;
   @include respond(largeTablet) {
-    height: 50vh;
+    
+    height: 80vh;
     width: 80%;
   }
   @include respond(tablet) {
-    height: 50vh;
+    height: 80vh;
     width: 95%;
   }
   @include respond(largePhone) {
